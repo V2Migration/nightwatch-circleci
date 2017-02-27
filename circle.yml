@@ -66,8 +66,11 @@ test:
 
 ## Customize deployment commands
 deployment:
-  staging:
+  master:
     branch: master
+    owner: circleci
+    commands:
+      - ./deploy_master.sh
     
  ## Custom notifications
 notify:
